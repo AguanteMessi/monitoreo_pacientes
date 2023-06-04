@@ -1,0 +1,76 @@
+<!-- VENTANA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    {% block css%}
+    {% endblock%}
+    <link rel="stylesheet" href="{% static 'appmonitoreo/css/estilos.css' %}">
+    
+    <title>MONITOREO DE PACIENTES</title>
+</head>
+<!-- VENTANA -->
+
+<!-- ENCABEZADO -->
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img class="menu" src="{%static 'appmonitoreo/img/logo.jpg' %}" alt="logo">
+            <h2 class="nombre-empresa">CENTRO MÉDICO DOS ÁLAMOS</h2>
+        </a>
+        <nav>
+            <a href="" class="nav-link">QUIENES SOMOS</a>
+            <a href="" class="nav-link">ÁREA DE RECLAMOS</a>
+            <a href="" class="nav-link">ATENCIÓN AL CLIENTE</a>
+            <a href="" class="nav-link">MI PERFIL</a>
+        </nav>
+    </body>
+</header>
+<!-- ENCABEZADO -->
+
+<!-- CUERPO -->
+{%block contenido%}
+{%endblock%}
+<!-- CUERPO -->
+
+<!-- FOOTER-->
+
+{% comment %} <footer class="footer">
+
+    <div class="row justify-content-around text-light">
+
+      <div class="col-md-4 my-auto">
+      
+          <h3>Desarrollado por:</h3>
+          
+          <h6>Pedro San Martín<br>
+          Camilo Silva <br>
+          Benjamín Espina<br>
+          Roberto Fuentealba<br>
+          Juan Guajardo</h6>
+          <br>
+          <h5>2023 &copy Todos los derechos reservados</h5>
+      
+          <h3>
+            Contacto:
+          </h3>
+
+          <h6>
+            +56 9 6666 6666
+          </h6>
+      
+    </div>
+      
+
+
+  </footer> {% endcomment %}
+
+{% block js%}
+{% endblock %}
+
+</html>
+
+<!-- FOOTER -->

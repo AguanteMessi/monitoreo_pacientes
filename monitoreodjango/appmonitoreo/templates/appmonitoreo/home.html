@@ -1,0 +1,39 @@
+{% extends 'appmonitoreo/base.html' %}
+
+{% load static %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block contenido %}
+<!-- CUERPO -->
+<div class="table-container">
+    <div class="table-wrapper">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Número telefónico</th>
+                    <th>Estado de pago</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for c in paciente %}
+                <tr>
+                    <td>{{ c.nombre }}</td>
+                    <td>{{ c.tele }}</td>
+                    <td>{{ c.estado }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
